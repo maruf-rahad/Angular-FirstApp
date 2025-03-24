@@ -1,4 +1,8 @@
 <p>
     This is home components
 </p>
+
 <app-greeting [message]="homeMessage()"/>
+<app-counter/>
+<!-- Matches shift and enter -->
+<input placeholder="type something" type="text" (keyup)="keyUpHandler($event)" />
